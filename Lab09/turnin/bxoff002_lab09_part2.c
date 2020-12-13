@@ -19,6 +19,7 @@
 volatile unsigned char TimerFlag = 0;
 unsigned long _avr_timer_M = 1;
 unsigned long _avr_timer_cntcurr = 0;
+unsigned char blinkingLEDs_led = 0x00;
 
 void TimerOn() {
     TCCR1B = 0x0B;
@@ -118,8 +119,6 @@ void BlinkingLEDSM() {
 }
 
 enum combineLEDs_States {combineLEDs_combine} combineLEDs_state;
-
-unsigned char blinkingLEDs_led = 0x00;
 
 void CombineLEDsSM() {
   switch(combineLEDs_state) {
