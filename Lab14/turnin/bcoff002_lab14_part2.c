@@ -1,11 +1,13 @@
-/*	Author: briancoffey
- *  Partner(s) Name: Brian Coffey
- *	Lab Section: 24
- *	Assignment: Lab 14  Exercise 2
- *	Exercise Description: [optional - include for your own benefit]
+/* Author: Brian Coffey
+ * Partner(s) Name (if applicable):
+ * Lab Section: 24
+ * Assignment: Lab #14  Exercise #2
+ * Exercise Description: [optional - include for your own benefit]
  *
- *	I acknowledge all content contained herein, excluding template or example
- *	code, is my own original work.
+ * I acknowledge all content contained herein, excluding template or example
+ * code, is my own original work.
+ *
+ *  Demo Link: Youtube URL> https://www.youtube.com/watch?v=ExT-Y1_O9JA
  */
 #include <avr/io.h>
 #ifdef _SIMULATE_
@@ -81,7 +83,7 @@ void Tick() {
             if (USART_HasReceived(0)) {
                 temp = USART_Receive(0);
                 PORTA = temp;
-                USART_Flush(0); 
+                USART_Flush(0);
             }
             PORTC = 0x00;
             break;

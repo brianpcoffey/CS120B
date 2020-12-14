@@ -1,5 +1,5 @@
 /* Author: Brian Coffey
- * Partner(s) Name (if applicable):  
+ * Partner(s) Name (if applicable):
  * Lab Section: 24
  * Assignment: Lab #14  Exercise #3
  * Exercise Description: [optional - include for your own benefit]
@@ -7,7 +7,7 @@
  * I acknowledge all content contained herein, excluding template or example
  * code, is my own original work.
  *
- *  Demo Link: Youtube URL> 
+ *  Demo Link: Youtube URL> https://www.youtube.com/watch?v=LK55n499Ofw
  */
 
 #include <avr/io.h>
@@ -55,7 +55,7 @@ void Tick() {
                     while(!USART_HasTransmitted(1)) {
                         continue;
                     }
-                    temp = ~temp;
+                    temp ^= 1;
                 }
                 counter = 0;
             }
@@ -64,7 +64,7 @@ void Tick() {
             break;
         default:
             break;
-    }    
+    }
 }
 
 int main(void) {
@@ -78,7 +78,6 @@ int main(void) {
     state = follower;
     PORTA = temp;
     USART_Flush(0);
-
 
     while (1) {
         Tick();
