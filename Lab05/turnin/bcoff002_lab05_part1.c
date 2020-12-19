@@ -6,6 +6,7 @@
  *
  *	I acknowledge all content contained herein, excluding tmplate or example
  *	code, is my own original work.
+ <DEMO> https://www.youtube.com/watch?v=myhta-sZZ4s
  */
 #include <avr/io.h>
 #ifdef _SIMULATE_
@@ -45,7 +46,7 @@ int main(void) {
         if (tmpA <= 4) {
             tmpC = tmpC | 0x40;
         }
-        
+
         PORTC = tmpC;
     }
     return 1;

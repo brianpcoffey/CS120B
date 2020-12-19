@@ -14,7 +14,7 @@
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
  *
- *  Demo Link:
+ *  Demo Link: https://www.youtube.com/watch?v=xAr6JNd9yqc
  */
 
 #include <avr/io.h>
@@ -170,7 +170,7 @@ int main(void) {
         tempA = ~PINA;
         Tick();
     }
-    
+
     PWM_off();
     return 1;
 }

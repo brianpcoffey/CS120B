@@ -6,7 +6,7 @@
 * I acknowledge all content contained herein, excluding template or example
 * code, is my own original work.
 *
-*  Demo Link: Youtube URL>
+*  Demo Link: Youtube URL> https://www.youtube.com/watch?v=09QYbuYE39k
 */
 
 #include <avr/io.h>
@@ -140,7 +140,7 @@ int main() {
   while(1) {
       tmpA = ~PINA & 0x03;
       ShiftSM();
-      
+
       while (!TimerFlag);
       TimerFlag = 0;
   }

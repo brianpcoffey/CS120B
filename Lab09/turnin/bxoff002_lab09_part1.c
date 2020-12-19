@@ -6,12 +6,12 @@
  * the following behavior: set only bit 0 to 1, then only bit 1, then only bit 2 in sequence for 1 second each.
  * In a second state machine (BlinkingLEDSM), output to a shared variable (blinkingLED)
  * the following behavior: set bit 3 to 1 for 1 second, then 0 for 1 second.
- * In a third state machine (CombineLEDsSM), combine both shared variables and output to the PORTB. 
+ * In a third state machine (CombineLEDsSM), combine both shared variables and output to the PORTB.
  *
  * I acknowledge all content contained herein, excluding template or example
  * code, is my own original work.
  *
- *  Demo Link: Youtube URL>
+ *  Demo Link: Youtube URL> https://www.youtube.com/watch?v=jn4o6gkO1j0
  */
 
  #include <avr/io.h>

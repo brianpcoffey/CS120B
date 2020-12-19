@@ -6,6 +6,7 @@
  *
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
+ <DEMO> https://www.youtube.com/watch?v=syXhciY9zAo
  */
  #include <avr/io.h>
  #include <avr/interrupt.h>
@@ -148,7 +149,7 @@
  int main(void) {
      DDRA = 0x00; PORTA = 0xFF;
      DDRB = 0xFF; PORTB = 0x07;
-     
+
      TimerSet(100);
      TimerOn();
 
